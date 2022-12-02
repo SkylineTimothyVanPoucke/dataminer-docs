@@ -43,6 +43,8 @@ To take these snapshots, we used dotTrace.
 ### Setup
 
 1. To start taking snapshots of the process, check on which server the element is hosted, and then place the [dotTrace Command-Line Profiler](https://www.jetbrains.com/help/profiler/Performance_Profiling__Profiling_Using_the_Command_Line.html) on this server and unzip it.
+   > [!NOTE]
+    > Always make sure that the command-line Profiler version and the dotTrace version match otherwise you won't be able to open the files.
 
 1. Open a command prompt as Administrator and navigate to the location where you placed the command line profiler, e.g.:
 
