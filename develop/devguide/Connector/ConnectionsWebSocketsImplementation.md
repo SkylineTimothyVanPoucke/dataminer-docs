@@ -39,7 +39,7 @@ For example:
 <HTTP>
    <Session id="1">
       <Connection id="1">
-         <Request verb="GET" url="/">
+         <Request verb="GET" url="10">
             <Headers>
                <Header key="Use-Cookie" pid="80" />
             </Headers>
@@ -62,7 +62,7 @@ Sec-WebSocket-Protocol: chat
 Sec-WebSocket-Version: 13
 ```
 
-If the URL used to set up the connection comes from a parameter value, e.g. from parameter 10, then specify url="10" (hard-coded values are not supported for the url attribute).
+The URL is used to set up the connection and must come from a parameter value, e.g. from parameter 10, then specify url="10", hard-coded values are not supported for the url attribute. WebSocket communication is not recognised when there is no url parameter defined and no packets will leave DataMiner. You can simply define a parameter and leave it empty.
 
 For example, suppose you need to connect to ws://10.4.2.8:4601/x-nmos/events, then there are two possibilities:
 
